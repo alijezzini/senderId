@@ -1,0 +1,3 @@
+senderid,content,website,note
+Facebook,XXXXXX is your Facebook confirmation code,https://www.facebook.com/,Example1
+FACEBOOK,XXXXXX is your Facebook confirmation code,https://www.facebook.com/,Example2
