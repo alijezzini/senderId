@@ -41,7 +41,7 @@ td { font-size: 12px; }
     <br/>
     Loading Table...
 </div>
-<h3 style="margin-bottom:2rem">Search Senders</h3>
+<h3 style="margin-bottom:2rem">Search All Senders</h3>
 
 <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
@@ -111,14 +111,15 @@ $(document).ready(function() {
         "initComplete": function(settings, json) {
     $('#overlay').delay(1000).fadeOut();
   },
-        "bPaginate": false,
-        dom: 'Bfrtip',
+  "lengthMenu": [[100, 1000, -1], [100, 1000, "All"]],
+        dom: 'lBfrtip',
         buttons: [
     {
         text: 'Export Excel',
         extend: 'excelHtml5',
         exportOptions: {
-            columns: ':visible'
+            columns: ':visible',
+            page: 'all'
         },
         className:'btn btn-success'
     }
